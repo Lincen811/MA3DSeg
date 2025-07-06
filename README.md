@@ -1,4 +1,4 @@
-### [3D UX-Net: A Large Kernel Volumetric ConvNet Modernizing Hierarchical Transformer for Medical Image Segmentation](https://arxiv.org/abs/2209.15076)
+### [MA3DSeg: a lightweight network enhanced with multiscale attention-guided feature mechanism for 3D tumor segmentation in PET images](https://arxiv.org/abs/2209.15076)
 
 Official Pytorch implementation of 3D UX-Net, from the following paper:
 
