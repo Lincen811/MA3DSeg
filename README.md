@@ -19,7 +19,7 @@ class="center">
 class="center">
 </p>
 
-We propose **3D UX-Net**, a pure volumetric convolutional network to adapt hierarchical transformers behaviour (e.g. Swin Transformer) for Medical Image Segmentation with less model parameters.
+ we propose multiscale attention-guided feature mechanism for 3D tumor segmentation (MA3DSeg) for accurate segmentation of tumor PET images. Specifically, we first utilize a 3D-DX block to construct a lightweight encoder to minimise the redundant information generated across channel features and reduce the model complexity. 
 
  ## Installation
  Please look into the [INSTALL.md](INSTALL.md) for creating conda environment and package installation procedures.
