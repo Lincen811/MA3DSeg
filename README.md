@@ -19,10 +19,10 @@ class="center">
  ## Usage
  ### Requirements
 ```
-pytorch 1.9.0\
-torchvision 0.10.0\
-prettytable\
-easydict\
+pytorch 1.9.0
+torchvision 0.10.0
+prettytable
+easydict
 ```
 
  ## Training Tutorial
