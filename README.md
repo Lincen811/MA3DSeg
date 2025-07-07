@@ -56,7 +56,7 @@ Training and fine-tuning instructions are in [TRAINING.md](TRAINING.md). Pretrai
 Efficient evaulation can be performed for the above three public datasets as follows:
 ```
 python test_seg.py --root path_to_image_folder --output path_to_output \
---dataset flare --network 3DUXNET --trained_weights path_to_trained_weights \
+--dataset flare --network MA3DSeg --trained_weights path_to_trained_weights \
 --mode test --sw_batch_size 4 --overlap 0.7 --gpu 0 --cache_rate 0.2 \
 ```
 
