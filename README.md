@@ -16,8 +16,14 @@ class="center">
 
  we propose multiscale attention-guided feature mechanism for 3D tumor segmentation (MA3DSeg) for accurate segmentation of tumor PET images. Specifically, we first utilize a 3D-DX block to construct a lightweight encoder to minimise the redundant information generated across channel features and reduce the model complexity. 
 
- ## Installation
- Please look into the [INSTALL.md](INSTALL.md) for creating conda environment and package installation procedures.
+ ## Usage
+ ### Requirements
+```
+pytorch 1.9.0\
+torchvision 0.10.0\
+prettytable\
+easydict\
+```
 
  ## Training Tutorial
  - [x] FeTA 2021, FLARE 2021 Training Code [TRAINING.md](TRAINING.md)
@@ -28,34 +34,18 @@ class="center">
  <!-- ✅ ⬜️  -->
  
  ## Results 
- ### FeTA 2021 Trained Models (5-folds cross-validation)
- | Methods | resolution | #params | FLOPs | Mean Dice | Model
-|:---:|:---:|:---:|:---:| :---:|:---:|
-| TransBTS | 96x96x96 | 31.6M | 110.4G | 0.868 | |
-| UNETR | 96x96x96 | 92.8M | 82.6G | 0.860 | |
-| nnFormer | 96x96x96 | 149.3M | 240.2G | 0.863 | |
-| SwinUNETR | 96x96x96 | 62.2M | 328.4G | 0.867 | |
-| 3D UX-Net | 96x96x96 | 53.0M | 639.4G | 0.874 | [Weights](https://drive.google.com/file/d/1AqJMIM2w8OGGiN1FonmZqNoRHd2x5fTL/view?usp=share_link)
+ ### ECPC-IDS Trained Models (5-folds cross-validation)
+###  Hecktor2022 Trained Models (5-folds cross-validation)
+<p align="center">
+<img src="screenshots/figure3.png" width=100% height=40% 
+class="center">
+</p>
 
-### FLARE 2021 Trained Models (5-folds cross-validation)
-| Methods | resolution | #params | FLOPs | Mean Dice | Model 
-|:---:|:---:|:---:|:---:| :---:|:---:|
-| TransBTS | 96x96x96 | 31.6M | 110.4G | 0.902 | | 
-| UNETR | 96x96x96 | 92.8M | 82.6G | 0.886 | |
-| nnFormer | 96x96x96 | 149.3M | 240.2G | 0.906 | |
-| SwinUNETR | 96x96x96 | 62.2M | 328.4G | 0.929 | |
-| 3D UX-Net | 96x96x96 | 53.0M | 639.4G | 0.936 (latest)| [Weights](https://drive.google.com/file/d/1APxKmq3MuueY4KtuKAZG3vs3vPLetLaK/view?usp=share_link)
-
-
-
- ### AMOS 2022 Fine-tuned Models 
- | Methods | resolution | #params | FLOPs | Mean Dice (AMOS2022) | Model 
-|:---:|:---:|:---:|:---:| :---:|:---:|
-| TransBTS | 96x96x96 | 31.6M | 110.4G | 0.792 |
-| UNETR | 96x96x96 | 92.8M | 82.6G | 0.762 | 
-| nnFormer | 96x96x96 | 149.3M | 240.2G | 0.790 | 
-| SwinUNETR | 96x96x96 | 62.2M | 328.4G | 0.880 | 
-| 3D UX-Net | 96x96x96 | 53.0M | 639.4G | 0.900 (kernel=7) | [Weights](https://drive.google.com/file/d/1G8uhjKh8392UFtGsMeolO__Lmz3GLAiG/view?usp=share_link)
+ ### AutoPET dataset Fine-tuned Models 
+<p align="center">
+<img src="screenshots/figure4.png" width=100% height=40% 
+class="center">
+</p>
 
 <!-- ✅ ⬜️  -->
 ## Training
@@ -76,16 +66,9 @@ This repository is built using the [timm](https://github.com/rwightman/pytorch-i
 ## License
 This project is released under the MIT license. Please see the [LICENSE](LICENSE) file for more information.
 
-## Citation
-If you find this repository helpful, please consider citing:
-```
-@article{lee20223d,
-  title={3D UX-Net: A Large Kernel Volumetric ConvNet Modernizing Hierarchical Transformer for Medical Image Segmentation},
-  author={Lee, Ho Hin and Bao, Shunxing and Huo, Yuankai and Landman, Bennett A},
-  journal={arXiv preprint arXiv:2209.15076},
-  year={2022}
-}
-```
+## Acknowledgments
+Some components of this code implementation are adopted from 3D UX-Net, Swin-UNETR and nnUNet. We sincerely appreciate for their contributions.
+
 
  
  
