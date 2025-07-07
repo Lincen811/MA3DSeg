@@ -26,8 +26,8 @@ easydict\
 ```
 
  ## Training Tutorial
- - [x] FeTA 2021, FLARE 2021 Training Code [TRAINING.md](TRAINING.md)
- - [x] AMOS 2022 Finetuning Code [TRAINING.md](TRAINING.md)
+ - [x] ECPC-IDS, Hecktor2022 Training Code [TRAINING.md](TRAINING.md)
+ - [x] AutoPET Finetuning Code [TRAINING.md](TRAINING.md)
  
  (Feel free to post suggestions in issues of recommending latest proposed transformer network for comparison. Currently, the network folder is to put the current SOTA transformer. We can further add the recommended network in it for training.)
  
